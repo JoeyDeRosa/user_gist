@@ -1,0 +1,12 @@
+{% extends "layout.jinja2" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block body %}
+<h1>Profile</h1>
+<p>First Name: {{ model.fname }}</p>
+<p>Last Name: {{ model.lname }}</p>
+<p>Email: {{ model.email }}</p>
+<p>Fav Food: {{ model.fav_food }}</p>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+
+  <body>
+      <li><a href="{{ request.route_url('profile') }}">profile</a></li>
+      <li><a href="{{ request.route_url('register') }}">register</a></li>
+      <li><a href="{{ request.route_url('login') }}">login</a></li>
+      <li><a href="{{ request.route_url('logout') }}">logout</a></li>
+      {% block body %}
+      {% endblock %}
+  </body>
+</html>
